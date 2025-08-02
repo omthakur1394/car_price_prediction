@@ -44,6 +44,7 @@ if not os.path.exists(MODEL_PKL) or not os.path.exists(PIPELINE_PKL):
     df = stect_train_set.copy()
     df_target = df['selling_price'].copy()
 
+
     # Apply log1p transformation to target
     df_target_log = np.log1p(df_target)
 
